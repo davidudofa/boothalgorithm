@@ -1,0 +1,28 @@
+$ gcc booth.c -o booth
+$ ./booth
+ 
+BOOTHS MULTIPLICATION ALGORITHM
+Enter two numbers to multiply: 12 12
+Both must be less than 16
+Enter A: Enter B: 
+Expected product = 144
+ 
+Binary Equivalents are: 
+A = 01100
+B = 01100
+B'' + 1 = 10100
+ 
+ 
+-->
+AR-SHIFT: 00000:00110
+-->
+AR-SHIFT: 00000:00011
+-->
+SUB B: 10100:00011
+AR-SHIFT: 11010:00001
+-->
+AR-SHIFT: 11101:00000
+-->
+ADD B: 01001:00000
+AR-SHIFT: 00100:10000
+Product is = 0010010000
